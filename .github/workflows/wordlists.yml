@@ -18,9 +18,6 @@ jobs:
 
       - name: make wordlists dir
         run: mkdir -p data/automated/
-      
-      - name: list directories
-        run: ls -lahtR
 
       - name: generate ./data/automated/php-html-htm-js.txt
         run: |
@@ -29,10 +26,10 @@ jobs:
             --project ${{ secrets.GCP_PROJECT_ID }} \
             --verbose \
             ext-wordlist \
+            --output ./data/automated/php-html-htm-js.txt \
             --sources httparchive \
             --date 2020_10_01 \
             -e php,html,htm,js
-            --output ./data/automated/php-html-htm-js.txt \
             --limit 1000000
 
       - name: sanity check
@@ -45,10 +42,10 @@ jobs:
             --project ${{ secrets.GCP_PROJECT_ID }} \
             --verbose \
             ext-wordlist \
+            --output ./data/automated/jsp-jspa-do-action-html-htm-js.txt \
             --sources httparchive \
             --date 2020_10_01 \
             -e jsp,jspa,do,action,html,htm-js
-            --output ./data/automated/jsp-jspa-do-action-html-htm-js.txt \
             --limit 1000000
 
       - name: sanity check
@@ -61,10 +58,10 @@ jobs:
             --project ${{ secrets.GCP_PROJECT_ID }} \
             --verbose \
             ext-wordlist \
+            --output ./data/automated/aspx-asp-cfm-svc-ashx-asmx-html-htm-js.txt \
             --sources httparchive \
             --date 2020_10_01 \
             -e aspx,asp,cfm,svc,ashx,asmx,html,htm,js
-            --output ./data/automated/aspx-asp-cfm-svc-ashx-asmx-html-htm-js.txt \
             --limit 1000000
             
 

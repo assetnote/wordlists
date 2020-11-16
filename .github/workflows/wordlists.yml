@@ -17,7 +17,10 @@ jobs:
         run: echo '${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}' > ./credentials.json
 
       - name: make wordlists dir
-        run: mkdir -p data/automated
+        run: mkdir -p data/automated/
+      
+      - name: list directories
+        run: ls -lahtR
 
       - name: generate data/automated/php-html-htm-js.txt
         run: |

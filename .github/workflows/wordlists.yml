@@ -31,7 +31,7 @@ jobs:
           ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output ./data/automated/jsp-jspa-do-action.txt --limit 10000000 --sources httparchive --date 2020_10_01 -e jsp,jspa,do,action
 
       - name: sanity check
-        run: head -n25 ./data/automated/jsp.txt
+        run: head -n25 ./data/automated/jsp-jspa-do-action.txt
       
       - name: generate ./data/automated/aspx-asp-cfm-svc-ashx-asmx.txt
         run: |

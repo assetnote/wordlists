@@ -1,0 +1,12 @@
+{
+    "data": [
+        {
+            "Filename": "best-dns-wordlist.txt",
+            "Description": "Try this wordlist when performing a thorough DNS bruteforce of any given target. You'll find that you discover some pretty obscure subdomains using this wordlist.",
+            "Line Count": 9996122,
+            "File Size": "139MiB",
+            "Date": "16/11/2020 20:54:33",
+            "Download": "<a href='data/manual/best-dns-wordlist.txt'>Download</a>"
+        }
+    ]
+}

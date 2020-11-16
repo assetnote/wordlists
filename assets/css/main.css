@@ -1,0 +1,603 @@
+/*
+Main.css
+==================================
+Begin with generic 'mobile first' styles
+*/
+
+/*
+Normalize the box model
+==================================
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+ }
+
+/*
+global styles
+==================================
+*/
+
+html, body {
+    height: 100%;
+}
+
+/*
+Typography
+==================================
+*/
+
+body {
+    font-family: "Avenir Next", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.466666667;
+}
+
+h1,
+h3,
+h4,
+h5,
+strong {
+    font-family: "Avenir Next Demi", "Avenir Next", Arial, sans-serif;
+    font-weight: 600;
+}
+
+.site-title {
+    font-size: 1.625em;
+    font-family: "Avenir Next", Arial, sans-serif;
+    font-weight: normal;
+    color: #919395;
+    margin: 0;
+    line-height: 1.2941176470588236;
+    display: inline-block;
+}
+
+h2 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.375em;
+    margin: 1.4em 0 0 0;
+}
+
+h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.page-title {
+    margin-top: .727272727em; /* 16/22 */
+}
+
+/*
+Lists
+--------------------------------
+*/
+
+.main-content ul {
+    padding-left: 1.1em;
+}
+
+.main-content li {
+    margin-bottom: 1em;
+}
+
+li h3,
+li h4 {
+    margin: 0;
+}
+
+li p {
+    margin-top: 0;
+}
+
+/*
+Links
+==================================
+*/
+
+a {
+    -webkit-transition: .2s;
+       -moz-transition: .2s;
+            transition: .2s;
+}
+
+a,
+a:link,
+a:visited {
+    color: #0072ce;
+    border-bottom: 1px dotted #0072ce;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #7eb8dd;
+    color: #7eb8dd;
+    text-decoration: none;
+}
+
+a:active {
+    border-bottom: 1px solid #002d72;
+    color: #002d72;
+    text-decoration: none;
+}
+
+a:focus {
+    border-bottom: 1px solid #0072ce;
+    color: #0072ce;
+    outline: thin dotted;
+    text-decoration: none;
+}
+
+a.title-link {
+    color: #75787B;
+    border-bottom: none;
+}
+
+a.title-link:hover,
+a.title-link:active,
+a.title-link:focus {
+    color: #7eb8dd;
+    border-bottom: none;
+}
+
+a.skip-link {
+    color: #0072ce;
+    border-bottom: none;
+    padding: .25em;
+}
+
+a.skip-link:hover,
+a.skip-link:active,
+a.skip-link:focus {
+    background-color: #0072ce;
+    color: #fff;
+    border-bottom: none;
+}
+
+
+/*
+Navigation
+==================================
+*/
+
+.sidebar-nav a {
+  display: block;
+  padding: 10px;
+  -webkit-transition: unset;
+  transition: unset;
+}
+.sidebar-nav a,
+.sidebar-nav a:link,
+.sidebar-nav a:visited {
+  border-bottom: none;
+  color: #75787b;
+}
+.sidebar-nav li:hover,
+.sidebar-nav a:focus,
+.sidebar-nav li:active,
+.sidebar-nav .sidebar-nav-active {
+  color: #75787b;
+  border-left: 4px solid #3f51b5;
+  background-color: transparent;
+  border-bottom: 1px solid #babbbd;
+}
+.sidebar-nav li:hover,
+.sidebar-nav li:active,
+.sidebar-nav .sidebar-nav-active {
+  padding-left: 0;
+}
+.sidebar-nav a:focus {
+  padding-left: 6px;
+}
+.sidebar-nav li:hover a:focus,
+.sidebar-nav li:active a:focus {
+  border-left: none;
+  padding-left: 10px;
+}
+.sidebar-nav ul {
+  margin: 0;
+  padding: 0;
+  /*border-top: 1px solid @gray-50;*/
+}
+.sidebar-nav li {
+  list-style: none;
+  border-bottom: 1px solid #babbbd;
+  font-size: 1.125em;
+  padding-left: 4px;
+}
+.sidebar-nav li:last-child {
+  border-bottom: none;
+}
+
+
+/*
+Layout
+==================================
+*/
+
+.logo {
+    display: block;
+}
+
+.content {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/* offset the fixed position header for jump links */
+section:before {
+    display: block;
+    content: "";
+    height: 60px;
+    margin: -60px 0 0;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header {
+    width: 100%;
+    border-bottom: 4px solid #3f51b5;
+    background-color: #fff;
+    padding: 2em 0;
+}
+
+
+/*
+Footer
+==================================
+*/
+
+/* for sticky footer */
+.container {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    display: table-row; /* for sticky footer */
+    height: 1px; /* for sticky footer */
+    border-top: 2px solid #babbbd;
+    background: #f1f2f2;
+    width: 100%;
+    font-size: 0.875em;
+}
+
+footer .wrap {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+/*
+Helpers
+==================================
+*/
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+Style
+==================================
+*/
+
+.intro {
+    color: #75787B;
+}
+
+li h4 {
+    margin: 0;
+}
+
+.license {
+    font-family: "Avenir Next Demi", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+pre {
+    max-width: 100%;
+    font-size: 0.875em;
+    overflow-y: scroll;
+    background-color: #f1f2f2;
+    padding: 10px;
+}
+
+/*
+Post list
+----------------------------------
+*/
+
+ul.posts {
+    padding: 0;
+}
+
+.posts li {
+    list-style: none;
+}
+
+.post-date {
+    color: #75787B;
+}
+
+/*
+Repo list
+----------------------------------
+*/
+
+ul.repo-list {
+    margin: .5em 0 1em 0;
+    padding: 0;
+}
+
+.repo-list li {
+    list-style: none;
+}
+
+.repo-list p {
+    margin: 0;
+    font-size: 0.875em;
+}
+
+.repo-list h4 {
+    text-transform: none;
+}
+
+/*
+Helper Classes
+==================================
+*/
+
+/*
+Clearfix list
+----------------------------------
+*/
+
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    *zoom: 1;
+}
+
+/*
+Desktop Styles
+==================================
+*/
+
+@media screen and (min-width: 45em) and (min-height: 32.5em) {
+
+    /*
+    Typography
+    ==============================
+    */
+
+    /*
+    Layout
+    ==============================
+    */
+
+    .logo {
+        max-width: 30%;
+        padding-right: 20px;
+        float: right;
+    }
+
+    aside {
+        width: 30%;
+        float: left;
+    }
+
+    .main-content {
+        width: 67%;
+        float: right;
+        margin-bottom: 120px;
+    }
+
+    /*
+    Navigation
+    ==============================
+    */
+
+
+    /*
+    Style
+    ==============================
+    */
+
+    /*
+    Repo list
+    ------------------------------
+    */
+
+    .repo-list li {
+        list-style: none;
+        display: block;
+        float: left;
+        height: 4.0625em;
+        max-height: 4.0625em;
+        background-color: #E7E7E6;
+        border-left: 1px solid #BABBBD;
+        width: 30%;
+    }
+
+    .repo-list a:link,
+    .repo-list a:visited {
+        display: block;
+        max-height: 4.0625em;
+        background-color: #E7E7E6;
+        border-bottom: none;
+        padding: .625em 1em 1em 1em;
+    }
+
+    .repo-list a:hover {
+        color: #4D5F87;
+        background-color: #CDE3F1;
+    }
+
+    .repo-list li:first-child {
+        text-align: center;
+        border-left: none;
+        line-height: 60px;
+        padding: .625em 1em;
+        width: 10%;
+    }
+
+}
+
+@media screen and (max-width: 54.375em) and (min-height: 32.5em) {
+
+    /* keep the repo list containers the same height, but account for the need for more height */
+
+    .repo-list li {
+        height: 6em;
+        max-height: 6em;
+    }
+
+    .repo-list a:link,
+    .repo-list a:visited {
+        max-height: 6em;
+    }
+}
+
+/*
+Mobile Styles
+==================================
+*/
+
+@media screen and (max-width: 40.5em) {
+
+    .main-content {
+        margin-top: 1.5em;
+    }
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+
+* {
+  transition: all 0.3s ease-out;
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  color: #262626;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #3f51b5;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+
+.card {
+  display: block;
+  top: 0px;
+  position: relative;
+  max-width: 262px;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+  
+  .go-corner {
+    opacity: 0.7;
+  }
+
+  &:hover {
+    border: 1px solid #3f51b5;
+    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+    z-index: 500;
+  }
+}
+
+.card:hover {
+  p{color: #00838d}
+  .go-corner {
+    transition: opactiy 0.3s linear;
+    opacity: 1;
+  }
+}

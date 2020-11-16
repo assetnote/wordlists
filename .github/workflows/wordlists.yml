@@ -26,10 +26,10 @@ jobs:
             --project ${{ secrets.GCP_PROJECT_ID }} \
             ext-wordlist \
             --output ./data/automated/php-html-htm-js.txt \
+            --limit 1000000
             --sources httparchive \
             --date 2020_10_01 \
             -e php,html,htm,js
-            --limit 1000000
 
       - name: sanity check
         run: head -n25 ./data/automated/php-html-htm-js.txt
@@ -41,10 +41,10 @@ jobs:
             --project ${{ secrets.GCP_PROJECT_ID }} \
             ext-wordlist \
             --output ./data/automated/jsp-jspa-do-action-html-htm-js.txt \
+            --limit 1000000
             --sources httparchive \
             --date 2020_10_01 \
             -e jsp,jspa,do,action,html,htm-js
-            --limit 1000000
 
       - name: sanity check
         run: head -n25 ./data/automated/jsp-jspa-do-action-html-htm-js.txt
@@ -56,10 +56,10 @@ jobs:
             --project ${{ secrets.GCP_PROJECT_ID }} \
             ext-wordlist \
             --output ./data/automated/aspx-asp-cfm-svc-ashx-asmx-html-htm-js.txt \
+            --limit 1000000
             --sources httparchive \
             --date 2020_10_01 \
             -e aspx,asp,cfm,svc,ashx,asmx,html,htm,js
-            --limit 1000000
             
 
       - name: sanity check

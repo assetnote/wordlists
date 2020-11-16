@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set current date as env variable
-        run: echo "::set-env name=NOW::$(date +'%Y_%m_%d')"
+        run: echo "NOW=$(date +'%Y_%m_%d')" >> $GITHUB_ENV
         
       - name: put service account creds in a file
         run: echo '${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}' > ./credentials.json
@@ -22,27 +22,27 @@ jobs:
       - name: make wordlists dir
         run: mkdir -p data/automated/
 
-      - name: generate ./data/automated/php_$NOW.txt
+      - name: generate ./data/automated/php_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/php_$NOW.txt" --limit 10000000 --sources httparchive --date 2020_10_01 -e php
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/php_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive --date 2020_10_01 -e php
 
       - name: sanity check
-        run: head -n25 "./data/automated/php_$NOW.txt"
+        run: head -n25 "./data/automated/php_${{ env.NOW }}.txt"
       
-      - name: generate ./data/automated/jsp-jspa-do-action_$NOW.txt
+      - name: generate ./data/automated/jsp-jspa-do-action_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/jsp-jspa-do-action_$NOW.txt" --limit 10000000 --sources httparchive --date 2020_10_01 -e jsp,jspa,do,action
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/jsp-jspa-do-action_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive --date 2020_10_01 -e jsp,jspa,do,action
 
       - name: sanity check
-        run: head -n25 "./data/automated/jsp-jspa-do-action_$NOW.txt"
+        run: head -n25 "./data/automated/jsp-jspa-do-action_${{ env.NOW }}.txt"
       
-      - name: generate ./data/automated/aspx-asp-cfm-svc-ashx-asmx_$NOW.txt
+      - name: generate ./data/automated/aspx-asp-cfm-svc-ashx-asmx_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/aspx-asp-cfm-svc-ashx-asmx_$NOW.txt" --limit 10000000 --sources httparchive --date 2020_10_01 -e aspx,asp,cfm,svc,ashx,asmx
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/aspx-asp-cfm-svc-ashx-asmx_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive --date 2020_10_01 -e aspx,asp,cfm,svc,ashx,asmx
             
 
       - name: sanity check
-        run: head -n25 "./data/automated/aspx-asp-cfm-svc-ashx-asmx_$NOW.txt"
+        run: head -n25 "./data/automated/aspx-asp-cfm-svc-ashx-asmx_${{ env.NOW }}.txt"
 
       - name: generate json
         run: python gen-json.py ./data/automated/ > ./data/automated.json

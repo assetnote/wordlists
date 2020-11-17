@@ -19,7 +19,7 @@
   crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.10.21/type-detection/file-size.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/file-size.js"></script>
     <script type="text/javascript" charset="utf8" src="https://momentjs.com/downloads/moment.js"></script>
     
     
@@ -114,6 +114,9 @@
 
       $(document).ready(function() {
         $('#automatedWordlists').DataTable( {
+            columnDefs: [
+              { type: 'file-size', targets: 2 }
+            ],
             "ajax": "data/automated.json",
             "columns": [
                 { "data": "Filename" },
@@ -129,6 +132,9 @@
 
     $(document).ready(function() {
         $('#manualWordlists').DataTable( {
+            columnDefs: [
+              { type: 'file-size', targets: 3 }
+            ],
             "ajax": "data/manual.json",
             "columns": [
                 { "data": "Filename" },
@@ -145,6 +151,9 @@
 
     $(document).ready(function() {
         $('#technologyLists').DataTable( {
+            columnDefs: [
+              { type: 'file-size', targets: 2 }
+            ],
             "ajax": "data/technologies.json",
             "columns": [
                 { "data": "Filename" },
@@ -158,17 +167,6 @@
         } );
     } );
     
-
-    jQuery.fn.dataTable.ext.type.detect.unshift( function ( data ) {
-      if ( typeof data !== 'string' ) {
-          return null;
-      }
-  
-      var matches = data.match( /^(\d+(?:\.\d+)?)\s*([a-z]+)/i );
-      var units = ['b', 'kb', 'mb', 'gb', 'tb', 'pb'];
-      var is_file_size = ( matches && jQuery.inArray(matches[2].toLowerCase(), units) !== -1 );
-      return is_file_size ? 'file-size' : null;
-    } );
     </script>
 
     </body>

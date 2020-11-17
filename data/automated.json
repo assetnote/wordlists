@@ -1,25 +1,81 @@
 {
     "data": [
         {
-            "Filename": "jsp-jspa-do-action_2020_11_16.txt", 
-            "Line Count": 10506, 
-            "File Size": "212.9kb", 
-            "Date": 1605560573.458902, 
-            "Download": "<a href='data/automated/jsp-jspa-do-action_2020_11_16.txt'>Download</a>"
+            "Filename": "httparchive_cgi_pl_2020_11_17.txt", 
+            "Line Count": 2637, 
+            "File Size": "44.0kb", 
+            "Date": 1605611884.9327598, 
+            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_cgi_pl_2020_11_17.txt'>Download</a>"
         }, 
         {
-            "Filename": "php_2020_11_16.txt", 
+            "Filename": "httparchive_php_2020_11_17.txt", 
             "Line Count": 74887, 
             "File Size": "1.7mb", 
-            "Date": 1605560573.3253548, 
-            "Download": "<a href='data/automated/php_2020_11_16.txt'>Download</a>"
+            "Date": 1605611702.3233542, 
+            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_php_2020_11_17.txt'>Download</a>"
         }, 
         {
-            "Filename": "aspx-asp-cfm-svc-ashx-asmx_2020_11_16.txt", 
+            "Filename": "httparchive_subdomains_2020_11_17.txt", 
+            "Line Count": 1537976, 
+            "File Size": "28.4mb", 
+            "Date": 1605612005.8562734, 
+            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_subdomains_2020_11_17.txt'>Download</a>"
+        }, 
+        {
+            "Filename": "httparchive_directories_1m_2020_11_17.txt", 
+            "Line Count": 1000000, 
+            "File Size": "30.1mb", 
+            "Date": 1605611950.523012, 
+            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_directories_1m_2020_11_17.txt'>Download</a>"
+        }, 
+        {
+            "Filename": "httparchive_zip_2020_11_17.txt", 
+            "Line Count": 647, 
+            "File Size": "25.1kb", 
+            "Date": 1605611904.8015816, 
+            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_zip_2020_11_17.txt'>Download</a>"
+        }, 
+        {
+            "Filename": "httparchive_aspx_asp_cfm_svc_ashx_asmx_2020_11_17.txt", 
             "Line Count": 63200, 
             "File Size": "1.7mb", 
-            "Date": 1605560574.162568, 
-            "Download": "<a href='data/automated/aspx-asp-cfm-svc-ashx-asmx_2020_11_16.txt'>Download</a>"
+            "Date": 1605611718.9553955, 
+            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_2020_11_17.txt'>Download</a>"
+        }, 
+        {
+            "Filename": "httparchive_txt_2020_11_17.txt", 
+            "Line Count": 6260, 
+            "File Size": "138.9kb", 
+            "Date": 1605611899.2253666, 
+            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_txt_2020_11_17.txt'>Download</a>"
+        }, 
+        {
+            "Filename": "httparchive_xml_2020_11_17.txt", 
+            "Line Count": 8969, 
+            "File Size": "168.5kb", 
+            "Date": 1605611892.5130923, 
+            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_xml_2020_11_17.txt'>Download</a>"
+        }, 
+        {
+            "Filename": "httparchive_html_htm_2020_11_17.txt", 
+            "Line Count": 194008, 
+            "File Size": "5.0mb", 
+            "Date": 1605611733.1519825, 
+            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_html_htm_2020_11_17.txt'>Download</a>"
+        }, 
+        {
+            "Filename": "httparchive_js_2020_11_17.txt", 
+            "Line Count": 4319406, 
+            "File Size": "171.8mb", 
+            "Date": 1605611876.104338, 
+            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_js_2020_11_17.txt'>Download</a>"
+        }, 
+        {
+            "Filename": "httparchive_jsp_jspa_do_action_2020_11_17.txt", 
+            "Line Count": 10506, 
+            "File Size": "212.9kb", 
+            "Date": 1605611709.4873774, 
+            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_jsp_jspa_do_action_2020_11_17.txt'>Download</a>"
         }
     ]
 }

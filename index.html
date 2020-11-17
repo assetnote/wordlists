@@ -34,7 +34,7 @@
       <header role="banner">
         <div class="wrap">
           
-            <img class="logo" src="https://storage.googleapis.com/assetnote-marketing/misc_logos/logo-small.png" alt="">
+            <a href="https://assetnote.io/"><img class="logo" src="https://storage.googleapis.com/assetnote-marketing/misc_logos/logo-small.png" alt=""></a>
             <br>
           
           <h1 class="site-title"><a class="title-link" href="/">Assetnote Wordlists</a></h1>
@@ -77,10 +77,19 @@
   </thead>
 </table>
 
+<h1>Technology <=> Host Mappings</h1>
 
-<div id="home">
-  
-</div>
+<table id="technologyLists" class="display" style="width:100%">
+  <thead>
+      <tr>
+          <th>Filename</th>
+          <th>Line Count</th>
+          <th>File Size</th>
+          <th>Date</th>
+          <th>Download</th>
+      </tr>
+  </thead>
+</table>
 
         </section>
 
@@ -133,6 +142,22 @@
             ]
         } );
     } );
+
+    $(document).ready(function() {
+        $('#technologyLists').DataTable( {
+            "ajax": "data/technologies.json",
+            "columns": [
+                { "data": "Filename" },
+                { "data": "Line Count" },
+                { "data": "File Size" },
+                { "data": "Date", "render": function(data, type) {
+                  return type === 'sort' ? data : moment.unix(data).format('LLL');
+                }},
+                { "data": "Download" },
+            ]
+        } );
+    } );
+    
 
     jQuery.fn.dataTable.ext.type.detect.unshift( function ( data ) {
       if ( typeof data !== 'string' ) {

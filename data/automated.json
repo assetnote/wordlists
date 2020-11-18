@@ -29,13 +29,6 @@
             "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_directories_1m_2020_11_17.txt'>Download</a>"
         }, 
         {
-            "Filename": "httparchive_zip_2020_11_17.txt", 
-            "Line Count": 647, 
-            "File Size": "25.1kb", 
-            "Date": 1605611904.8015816, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/automated/httparchive_zip_2020_11_17.txt'>Download</a>"
-        }, 
-        {
             "Filename": "httparchive_aspx_asp_cfm_svc_ashx_asmx_2020_11_17.txt", 
             "Line Count": 63200, 
             "File Size": "1.7mb", 

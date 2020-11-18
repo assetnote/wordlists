@@ -25,6 +25,22 @@ jobs:
       - name: make technologies dir
         run: mkdir -p data/technologies/
 
+      - uses: keithweaver/aws-s3-github-action@master
+        with:
+          command: sync
+          source: s3://assetnote-wordlists/data/automated/
+          destination: ./data/automated/
+          aws_access_key_id: ${{ secret.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secret.AWS_SECRET_ACCESS_KEY }}
+      
+      - uses: keithweaver/aws-s3-github-action@master
+        with:
+          command: sync
+          source: s3://assetnote-wordlists/data/technologies/
+          destination: ./data/technologies/
+          aws_access_key_id: ${{ secret.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secret.AWS_SECRET_ACCESS_KEY }}
+
       - name: generate ./data/automated/httparchive_php_${{ env.NOW }}.txt
         run: |
           ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_php_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e php --date 2020_10_01

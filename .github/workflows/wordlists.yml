@@ -25,17 +25,23 @@ jobs:
       - name: make technologies dir
         run: mkdir -p data/technologies/
 
-      - uses: chrislennon/action-aws-cli@v1.1
-      - run: aws s3 sync s3://assetnote-wordlists/data/automated/ ./data/automated/
+      - name: S3 Sync automated to local
+        uses: ItsKarma/aws-cli@v1.70.0
+        with:
+          args: s3 sync s3://assetnote-wordlists/data/automated/ ./data/automated/
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: "us-east-1"
       
-      - uses: chrislennon/action-aws-cli@v1.1
-      - run: aws s3 sync s3://assetnote-wordlists/data/technologies/ ./data/technologies/
+      - name: S3 Sync technologies to local
+        uses: ItsKarma/aws-cli@v1.70.0
+        with:
+          args: s3 sync s3://assetnote-wordlists/data/technologies/ ./data/technologies/
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: "us-east-1"
 
       - name: generate ./data/automated/httparchive_php_${{ env.NOW }}.txt
         run: |
@@ -235,7 +241,7 @@ jobs:
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
         with:
-          args: --acl public-read --delete
+          args: --acl public-read
         env:
           AWS_S3_BUCKET: assetnote-wordlists
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

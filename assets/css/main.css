@@ -10,7 +10,6 @@ Normalize the box model
 */
 
 .note {
-    position: absolute;
     z-index: 101;
     top: 0;
     left: 0;

@@ -9,6 +9,26 @@ Normalize the box model
 ==================================
 */
 
+.note {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #3f51b5;
+    color: white;
+    text-align: center;
+    line-height: 2.5;
+    overflow: hidden; 
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
+}
+
+.link-white {
+    color: white !important; 
+}
+
 *,
 *:before,
 *:after {
@@ -546,58 +566,4 @@ h3 {
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 4px;
-}
-
-.go-corner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  background-color: #3f51b5;
-  border-radius: 0 4px 0 32px;
-}
-
-.go-arrow {
-  margin-top: -4px;
-  margin-right: -4px;
-  color: white;
-  font-family: courier, sans;
-}
-
-
-.card {
-  display: block;
-  top: 0px;
-  position: relative;
-  max-width: 262px;
-  background-color: #f2f8f9;
-  border-radius: 4px;
-  padding: 32px 24px;
-  margin: 12px;
-  text-decoration: none;
-  overflow: hidden;
-  border: 1px solid #f2f8f9;
-  
-  .go-corner {
-    opacity: 0.7;
-  }
-
-  &:hover {
-    border: 1px solid #3f51b5;
-    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
-    z-index: 500;
-  }
-}
-
-.card:hover {
-  p{color: #00838d}
-  .go-corner {
-    transition: opactiy 0.3s linear;
-    opacity: 1;
-  }
 }

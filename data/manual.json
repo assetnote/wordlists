@@ -107,9 +107,9 @@
         {
             "Filename": "best-dns-wordlist.txt", 
             "Description": "Try this wordlist when performing a thorough DNS bruteforce of any given target. You'll find that you discover some pretty obscure subdomains using this wordlist.",
-            "Line Count": 9996122, 
-            "File Size": "139.0mb", 
-            "Date": 1605524214.704686, 
+            "Line Count": 9544235, 
+            "File Size": "134.3mb", 
+            "Date": 1605731348.270961, 
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/best-dns-wordlist.txt'>Download</a>"
         }, 
         {

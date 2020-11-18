@@ -25,21 +25,17 @@ jobs:
       - name: make technologies dir
         run: mkdir -p data/technologies/
 
-      - uses: keithweaver/aws-s3-github-action@master
-        with:
-          command: sync
-          source: s3://assetnote-wordlists/data/automated/
-          destination: ./data/automated/
-          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - uses: chrislennon/action-aws-cli@v1.1
+      - run: aws s3 sync s3://assetnote-wordlists/data/automated/ ./data/automated/
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       
-      - uses: keithweaver/aws-s3-github-action@master
-        with:
-          command: sync
-          source: s3://assetnote-wordlists/data/technologies/
-          destination: ./data/technologies/
-          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - uses: chrislennon/action-aws-cli@v1.1
+      - run: aws s3 sync s3://assetnote-wordlists/data/technologies/ ./data/technologies/
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: generate ./data/automated/httparchive_php_${{ env.NOW }}.txt
         run: |

@@ -31,16 +31,16 @@
   </head>
   <body>
     <div class="note">
-      <a class="link-white" href="https://assetnote.io/careers">We're hiring</a>
+      <a class="link-white" target="_blank" href="https://assetnote.io/careers">We're hiring 🎉</a>
   </div>
-  <br>
+  <br><br>
     <div class="container">
       
       <header role="banner">
         
         <div class="wrap">
           
-            <a href="https://assetnote.io/"><img class="logo" src="https://storage.googleapis.com/assetnote-marketing/misc_logos/logo-small.png" alt=""></a>
+            <a target="_blank" href="https://assetnote.io/"><img class="logo" src="https://storage.googleapis.com/assetnote-marketing/misc_logos/logo-small.png" alt=""></a>
             <br>
           
           <h1 class="site-title"><a class="title-link" href="/">Assetnote Wordlists</a></h1>
@@ -53,10 +53,29 @@
           
 <p>Welcome to Assetnote Wordlists.</p>
 
-<p>When performing security testing against an asset, it is vital to have high quality wordlists for content and subdomain discovery. This website provides you with wordlists that are up to date, and effective against the most popular technologies on the internet.</p>
+<p>When performing security testing against an asset, it is vital to have high quality wordlists for content and subdomain discovery. This website provides you with wordlists that are up to date and effective against the most popular technologies on the internet.</p>
+
+<p>Wordlists are generated on the 30th of each month, using <a target="_blank" href="https://github.com/assetnote/commonspeak2/">Commonspeak2</a> and <a target="_blank" href="https://github.com/assetnote/wordlists/actions">GitHub Actions</a>. If there's an extension or technology that you would like a wordlist for, but it's not in the table below, <a target="_blank" href="https://github.com/assetnote/wordlists/blob/master/.github/workflows/wordlists.yml">send us a PR</a> and it will be included on this page after the next run.</p>
+
+<p>Assetnote automatically maps your external assets and monitors them for changes and security issues to help prevent serious breaches. If you want to protect your attack surface and would like a demonstration of our product, please reach out to us by <a target="_blank" href="https://assetnote.io/#signup">submitting our contact form.</a></p>
+
 <h1>Automatically Generated Wordlists</h1>
 
 <table id="automatedWordlists" class="display" style="width:100%">
+  <thead>
+      <tr>
+          <th>Filename</th>
+          <th>Line Count</th>
+          <th>File Size</th>
+          <th>Date</th>
+          <th>Download</th>
+      </tr>
+  </thead>
+</table>
+
+<h1>Technology <=> Host Mappings</h1>
+
+<table id="technologyLists" class="display" style="width:100%">
   <thead>
       <tr>
           <th>Filename</th>
@@ -82,28 +101,13 @@
       </tr>
   </thead>
 </table>
-
-<h1>Technology <=> Host Mappings</h1>
-
-<table id="technologyLists" class="display" style="width:100%">
-  <thead>
-      <tr>
-          <th>Filename</th>
-          <th>Line Count</th>
-          <th>File Size</th>
-          <th>Date</th>
-          <th>Download</th>
-      </tr>
-  </thead>
-</table>
-
         </section>
 
       </div><!-- /.wrap content -->
 
       <footer role="contentinfo">
         <div class="wrap">
-          <p>This project is maintained by <a href="https://assetnote.io">Assetnote</a>.</p>
+          <p>This project is maintained by <a target="_blank" href="https://assetnote.io">Assetnote</a>.</p>
         </div><!--/.wrap -->
       </footer>
     </div> <!-- /.container -->

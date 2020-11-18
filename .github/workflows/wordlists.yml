@@ -1,7 +1,8 @@
 name: generate and commit wordlists
-on:
-  schedule:
-    - cron:  "00 12 30 * *"  # At 12:00 on day-of-month 30.
+on: workflow_dispatch
+# on:
+#   schedule:
+#     - cron:  "00 12 30 * *"  # At 12:00 on day-of-month 30.
   
 
 jobs:
@@ -219,6 +220,18 @@ jobs:
       - name: generate technologies json
         run: python gen-json.py ./data/technologies/ > ./data/technologies.json
 
+      - name: Deploy to S3
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --acl public-read --delete
+        env:
+          AWS_S3_BUCKET: assetnote-wordlists
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: us-east-1
+          SOURCE_DIR: "data"
+          DEST_DIR: "data"
+      
       # ref [1]
       - name: setup ssh
         env:
@@ -235,7 +248,7 @@ jobs:
         run: |
           git config user.name "commonspeak2-delivery"
           git config user.email ""
-          git add data
+          git add data/*.json
           git commit -m "$(date +%Y-%m-%dT%H:%M:%S%z)"
           git push origin master
 

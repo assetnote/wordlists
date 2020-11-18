@@ -6,7 +6,7 @@
             "Line Count": 223823, 
             "File Size": "4.4mb", 
             "Date": 1605662115.481, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/pl.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/pl.txt'>Download</a>"
         }, 
         {
             "Filename": "2m-subdomains.txt",
@@ -14,7 +14,7 @@
             "Line Count": 2167059, 
             "File Size": "28.0mb", 
             "Date": 1605662198.574363, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/2m-subdomains.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/2m-subdomains.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-medium-files-lowercase.txt", 
@@ -22,7 +22,7 @@
             "Line Count": 16243, 
             "File Size": "207.6kb", 
             "Date": 1605661332.0217218, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-medium-files-lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-medium-files-lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-small-extensions.txt", 
@@ -30,7 +30,7 @@
             "Line Count": 963, 
             "File Size": "7.1kb", 
             "Date": 1605661332.0296543, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-small-extensions.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-small-extensions.txt'>Download</a>"
         }, 
         {
             "Filename": "jsp.txt", 
@@ -38,7 +38,7 @@
             "Line Count": 114894, 
             "File Size": "2.2mb", 
             "Date": 1605662099.168, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/jsp.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/jsp.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-medium-directories.txt", 
@@ -46,7 +46,7 @@
             "Line Count": 30000, 
             "File Size": "244.6kb", 
             "Date": 1605661332.0194209, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-medium-directories.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-medium-directories.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-large-words.txt", 
@@ -54,7 +54,7 @@
             "Line Count": 119600, 
             "File Size": "1.0mb", 
             "Date": 1605661332.0174096, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-large-words.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-large-words.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-medium-extensions.txt", 
@@ -62,7 +62,7 @@
             "Line Count": 1289, 
             "File Size": "9.6kb", 
             "Date": 1605661332.0209281, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-medium-extensions.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-medium-extensions.txt'>Download</a>"
         }, 
         {
             "Filename": "wordlist_with_underscores.txt", 
@@ -70,7 +70,7 @@
             "Line Count": 2674434, 
             "File Size": "38.5mb", 
             "Date": 1605662132.239, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/wordlist_with_underscores.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/wordlist_with_underscores.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-small-directories-lowercase.txt", 
@@ -78,7 +78,7 @@
             "Line Count": 17770, 
             "File Size": "142.3kb", 
             "Date": 1605661332.0270746, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-small-directories-lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-small-directories-lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "wordlist_no_underscores.txt", 
@@ -86,7 +86,7 @@
             "Line Count": 1916730, 
             "File Size": "25.5mb", 
             "Date": 1605662128.188, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/wordlist_no_underscores.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/wordlist_no_underscores.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-small-files-lowercase.txt", 
@@ -94,7 +94,7 @@
             "Line Count": 10848, 
             "File Size": "137.4kb", 
             "Date": 1605661332.0305843, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-small-files-lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-small-files-lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "do.txt", 
@@ -102,7 +102,7 @@
             "Line Count": 173152, 
             "File Size": "4.8mb", 
             "Date": 1605662091.519, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/do.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/do.txt'>Download</a>"
         }, 
         {
             "Filename": "best-dns-wordlist.txt", 
@@ -110,7 +110,7 @@
             "Line Count": 9996122, 
             "File Size": "139.0mb", 
             "Date": 1605524214.704686, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/best-dns-wordlist.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/best-dns-wordlist.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-medium-extensions-lowercase.txt", 
@@ -118,7 +118,7 @@
             "Line Count": 1233, 
             "File Size": "9.4kb", 
             "Date": 1605661332.0200944, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-medium-extensions-lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-medium-extensions-lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "bak.txt", 
@@ -126,7 +126,7 @@
             "Line Count": 31725, 
             "File Size": "634.8kb", 
             "Date": 1605662083.047, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/bak.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/bak.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-medium-words.txt", 
@@ -134,7 +134,7 @@
             "Line Count": 63087, 
             "File Size": "512.3kb", 
             "Date": 1605661332.025546, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-medium-words.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-medium-words.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-large-words-lowercase.txt", 
@@ -142,7 +142,7 @@
             "Line Count": 107982, 
             "File Size": "936.9kb", 
             "Date": 1605661332.015388, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-large-words-lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-large-words-lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-medium-directories-lowercase.txt", 
@@ -150,7 +150,7 @@
             "Line Count": 26584, 
             "File Size": "219.2kb", 
             "Date": 1605661332.0185478, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-medium-directories-lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-medium-directories-lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "cfm.txt", 
@@ -158,7 +158,7 @@
             "Line Count": 12100, 
             "File Size": "260.3kb", 
             "Date": 1605662087.314, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/cfm.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/cfm.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-small-words.txt", 
@@ -166,7 +166,7 @@
             "Line Count": 43003, 
             "File Size": "340.4kb", 
             "Date": 1605661332.0335722, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-small-words.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-small-words.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-small-extensions-lowercase.txt", 
@@ -174,7 +174,7 @@
             "Line Count": 914, 
             "File Size": "6.9kb", 
             "Date": 1605661332.0287392, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-small-extensions-lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-small-extensions-lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-medium-files.txt", 
@@ -182,7 +182,7 @@
             "Line Count": 17128, 
             "File Size": "219.1kb", 
             "Date": 1605661332.022962, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-medium-files.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-medium-files.txt'>Download</a>"
         }, 
         {
             "Filename": "php.txt", 
@@ -190,7 +190,7 @@
             "Line Count": 3174758, 
             "File Size": "81.3mb", 
             "Date": 1605662108.026, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/php.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/php.txt'>Download</a>"
         }, 
         {
             "Filename": "xml_filenames.txt", 
@@ -198,7 +198,7 @@
             "Line Count": 2270059, 
             "File Size": "50.8mb", 
             "Date": 1605662206.494, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/xml_filenames.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/xml_filenames.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-medium-words-lowercase.txt", 
@@ -206,7 +206,7 @@
             "Line Count": 56293, 
             "File Size": "460.0kb", 
             "Date": 1605661332.0242405, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-medium-words-lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-medium-words-lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-large-directories-lowercase.txt", 
@@ -214,7 +214,7 @@
             "Line Count": 56163, 
             "File Size": "482.5kb", 
             "Date": 1605661332.0079706, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-large-directories-lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-large-directories-lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-small-directories.txt", 
@@ -222,7 +222,7 @@
             "Line Count": 20116, 
             "File Size": "159.4kb", 
             "Date": 1605661332.0278244, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-small-directories.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-small-directories.txt'>Download</a>"
         }, 
         {
             "Filename": "asp_lowercase.txt", 
@@ -230,7 +230,7 @@
             "Line Count": 24074, 
             "File Size": "1.1mb", 
             "Date": 1605662072.937, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/asp_lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/asp_lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-large-directories.txt", 
@@ -238,7 +238,7 @@
             "Line Count": 62283, 
             "File Size": "529.3kb", 
             "Date": 1605661332.0092957, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-large-directories.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-large-directories.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-small-words-lowercase.txt", 
@@ -246,7 +246,7 @@
             "Line Count": 38267, 
             "File Size": "304.5kb", 
             "Date": 1605661332.0326014, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-small-words-lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-small-words-lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-large-words-ext.txt", 
@@ -254,7 +254,7 @@
             "Line Count": 119600, 
             "File Size": "1.7mb", 
             "Date": 1605661231.1136692, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-large-words-ext.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-large-words-ext.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-small-files.txt", 
@@ -262,7 +262,7 @@
             "Line Count": 11424, 
             "File Size": "144.9kb", 
             "Date": 1605661332.031665, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-small-files.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-small-files.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-large-extensions-lowercase.txt", 
@@ -270,7 +270,7 @@
             "Line Count": 2366, 
             "File Size": "19.8kb", 
             "Date": 1605661332.010178, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-large-extensions-lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-large-extensions-lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "aspx_lowercase.txt", 
@@ -278,7 +278,7 @@
             "Line Count": 80293, 
             "File Size": "4.4mb", 
             "Date": 1605662078.17, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/aspx_lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/aspx_lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-large-files-lowercase.txt", 
@@ -286,7 +286,7 @@
             "Line Count": 35324, 
             "File Size": "459.3kb", 
             "Date": 1605661332.0119982, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-large-files-lowercase.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-large-files-lowercase.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-large-files.txt", 
@@ -294,7 +294,7 @@
             "Line Count": 37042, 
             "File Size": "481.9kb", 
             "Date": 1605661332.013087, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-large-files.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-large-files.txt'>Download</a>"
         }, 
         {
             "Filename": "html.txt", 
@@ -302,7 +302,7 @@
             "Line Count": 4227526, 
             "File Size": "107.7mb", 
             "Date": 1605662095.46, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/html.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/html.txt'>Download</a>"
         }, 
         {
             "Filename": "raft-large-extensions.txt", 
@@ -310,7 +310,7 @@
             "Line Count": 2449, 
             "File Size": "20.2kb", 
             "Date": 1605661332.0109076, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/raft-large-extensions.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/raft-large-extensions.txt'>Download</a>"
         }, 
         {
             "Filename": "dot_filenames.txt", 
@@ -318,7 +318,7 @@
             "Line Count": 3191712, 
             "File Size": "71.3mb", 
             "Date": 1605661893.839, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/dot_filenames.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/dot_filenames.txt'>Download</a>"
         }, 
         {
             "Filename": "phpmillion.txt", 
@@ -326,7 +326,7 @@
             "Line Count": 1000000, 
             "File Size": "55.1mb", 
             "Date": 1605662111.771, 
-            "Download": "<a href='https://github.com/assetnote/wordlists/raw/master/./data/manual/phpmillion.txt'>Download</a>"
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/manual/phpmillion.txt'>Download</a>"
         }
     ]
 }

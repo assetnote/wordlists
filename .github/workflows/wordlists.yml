@@ -30,16 +30,16 @@ jobs:
           command: sync
           source: s3://assetnote-wordlists/data/automated/
           destination: ./data/automated/
-          aws_access_key_id: ${{ secret.AWS_ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ secret.AWS_SECRET_ACCESS_KEY }}
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       
       - uses: keithweaver/aws-s3-github-action@master
         with:
           command: sync
           source: s3://assetnote-wordlists/data/technologies/
           destination: ./data/technologies/
-          aws_access_key_id: ${{ secret.AWS_ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ secret.AWS_SECRET_ACCESS_KEY }}
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: generate ./data/automated/httparchive_php_${{ env.NOW }}.txt
         run: |

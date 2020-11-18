@@ -8,13 +8,6 @@
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_symfony_2020_11_18.txt'>Download</a>"
         }, 
         {
-            "Filename": "httparchive_symfony_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "131.0b", 
-            "Date": 1605688172.0233893, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_symfony_2020_11_17.txt'>Download</a>"
-        }, 
-        {
             "Filename": "httparchive_laravel_2020_11_18.txt", 
             "Line Count": 4112, 
             "File Size": "112.4kb", 
@@ -22,39 +15,11 @@
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_laravel_2020_11_18.txt'>Download</a>"
         }, 
         {
-            "Filename": "httparchive_tomcat_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "131.0b", 
-            "Date": 1605688172.0233893, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_tomcat_2020_11_17.txt'>Download</a>"
-        }, 
-        {
-            "Filename": "httparchive_django_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "131.0b", 
-            "Date": 1605688172.0193894, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_django_2020_11_17.txt'>Download</a>"
-        }, 
-        {
-            "Filename": "httparchive_yii_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "131.0b", 
-            "Date": 1605688172.0233893, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_yii_2020_11_17.txt'>Download</a>"
-        }, 
-        {
             "Filename": "httparchive_django_2020_11_18.txt", 
             "Line Count": 14452, 
             "File Size": "404.6kb", 
             "Date": 1605688582.0235507, 
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_django_2020_11_18.txt'>Download</a>"
-        }, 
-        {
-            "Filename": "httparchive_cherrypy_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "129.0b", 
-            "Date": 1605688172.0193894, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_cherrypy_2020_11_17.txt'>Download</a>"
         }, 
         {
             "Filename": "httparchive_zend_2020_11_18.txt", 
@@ -71,13 +36,6 @@
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_cherrypy_2020_11_18.txt'>Download</a>"
         }, 
         {
-            "Filename": "httparchive_apache_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "133.0b", 
-            "Date": 1605688172.0193894, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_apache_2020_11_17.txt'>Download</a>"
-        }, 
-        {
             "Filename": "httparchive_nginx_2020_11_18.txt", 
             "Line Count": 3237338, 
             "File Size": "86.0mb", 
@@ -85,39 +43,11 @@
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_nginx_2020_11_18.txt'>Download</a>"
         }, 
         {
-            "Filename": "httparchive_express_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "132.0b", 
-            "Date": 1605688172.0193894, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_express_2020_11_17.txt'>Download</a>"
-        }, 
-        {
-            "Filename": "httparchive_spring_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "130.0b", 
-            "Date": 1605688172.0193894, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_spring_2020_11_17.txt'>Download</a>"
-        }, 
-        {
             "Filename": "httparchive_tomcat_2020_11_18.txt", 
             "Line Count": 25545, 
             "File Size": "725.8kb", 
             "Date": 1605688479.9746222, 
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_tomcat_2020_11_18.txt'>Download</a>"
-        }, 
-        {
-            "Filename": "httparchive_zend_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "130.0b", 
-            "Date": 1605688172.0233893, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_zend_2020_11_17.txt'>Download</a>"
-        }, 
-        {
-            "Filename": "httparchive_rails_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "132.0b", 
-            "Date": 1605688172.0193894, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_rails_2020_11_17.txt'>Download</a>"
         }, 
         {
             "Filename": "httparchive_flask_2020_11_18.txt", 
@@ -148,13 +78,6 @@
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_yii_2020_11_18.txt'>Download</a>"
         }, 
         {
-            "Filename": "httparchive_flask_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "130.0b", 
-            "Date": 1605688172.0193894, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_flask_2020_11_17.txt'>Download</a>"
-        }, 
-        {
             "Filename": "httparchive_coldfusion_2020_11_18.txt", 
             "Line Count": 2183, 
             "File Size": "63.0kb", 
@@ -162,32 +85,11 @@
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_coldfusion_2020_11_18.txt'>Download</a>"
         }, 
         {
-            "Filename": "httparchive_adobe_experience_manager_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "131.0b", 
-            "Date": 1605688172.0193894, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_adobe_experience_manager_2020_11_17.txt'>Download</a>"
-        }, 
-        {
             "Filename": "httparchive_express_2020_11_18.txt", 
             "Line Count": 68100, 
             "File Size": "1.9mb", 
             "Date": 1605688584.8835762, 
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_express_2020_11_18.txt'>Download</a>"
-        }, 
-        {
-            "Filename": "httparchive_coldfusion_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "130.0b", 
-            "Date": 1605688172.0193894, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_coldfusion_2020_11_17.txt'>Download</a>"
-        }, 
-        {
-            "Filename": "httparchive_nginx_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "133.0b", 
-            "Date": 1605688172.0193894, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_nginx_2020_11_17.txt'>Download</a>"
         }, 
         {
             "Filename": "httparchive_spring_2020_11_18.txt", 
@@ -202,13 +104,6 @@
             "File Size": "2.3mb", 
             "Date": 1605688478.4186077, 
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_rails_2020_11_18.txt'>Download</a>"
-        }, 
-        {
-            "Filename": "httparchive_laravel_2020_11_17.txt", 
-            "Line Count": 3, 
-            "File Size": "131.0b", 
-            "Date": 1605688172.0193894, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/technologies/httparchive_laravel_2020_11_17.txt'>Download</a>"
         }
     ]
 }

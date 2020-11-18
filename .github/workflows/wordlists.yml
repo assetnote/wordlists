@@ -27,70 +27,70 @@ jobs:
 
       - name: generate ./data/automated/httparchive_php_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_php_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e php
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_php_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e php --date 2020_10_01
 
       - name: sanity check
         run: head -n25 "./data/automated/httparchive_php_${{ env.NOW }}.txt"
       
       - name: generate ./data/automated/httparchive_jsp_jspa_do_action_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_jsp_jspa_do_action_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e jsp,jspa,do,action
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_jsp_jspa_do_action_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e jsp,jspa,do,action --date 2020_10_01
 
       - name: sanity check
         run: head -n25 "./data/automated/httparchive_jsp_jspa_do_action_${{ env.NOW }}.txt"
       
       - name: generate ./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e aspx,asp,cfm,svc,ashx,asmx
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e aspx,asp,cfm,svc,ashx,asmx --date 2020_10_01
             
       - name: sanity check
         run: head -n25 "./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_${{ env.NOW }}.txt"
 
       - name: generate ./data/automated/httparchive_html_htm_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_html_htm_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e html,htm
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_html_htm_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e html,htm --date 2020_10_01
             
       - name: sanity check
         run: head -n25 "./data/automated/httparchive_html_htm_${{ env.NOW }}.txt"
       
       - name: generate ./data/automated/httparchive_js_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_js_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e js
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_js_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e js --date 2020_10_01
             
       - name: sanity check
         run: head -n25 "./data/automated/httparchive_js_${{ env.NOW }}.txt"
       
       - name: generate ./data/automated/httparchive_cgi_pl_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_cgi_pl_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e cgi,pl
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_cgi_pl_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e cgi,pl --date 2020_10_01
             
       - name: sanity check
         run: head -n25 "./data/automated/httparchive_cgi_pl_${{ env.NOW }}.txt"
       
       - name: generate ./data/automated/httparchive_xml_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_xml_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e xml
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_xml_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e xml --date 2020_10_01
             
       - name: sanity check
         run: head -n25 "./data/automated/httparchive_xml_${{ env.NOW }}.txt"
       
       - name: generate ./data/automated/httparchive_txt_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_txt_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e txt
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_txt_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e txt --date 2020_10_01
             
       - name: sanity check
         run: head -n25 "./data/automated/httparchive_txt_${{ env.NOW }}.txt"
       
       - name: generate ./data/automated/httparchive_conf_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_conf_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e conf
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_conf_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e conf --date 2020_10_01
             
       - name: sanity check
         run: head -n25 "./data/automated/httparchive_conf_${{ env.NOW }}.txt"
       
       - name: generate ./data/automated/httparchive_bak_${{ env.NOW }}.txt
         run: |
-          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_bak_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e bak
+          ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_bak_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e bak --date 2020_10_01
             
       - name: sanity check
         run: head -n25 "./data/automated/httparchive_bak_${{ env.NOW }}.txt"

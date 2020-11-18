@@ -1,13 +1,6 @@
 {
     "data": [
         {
-            "Filename": "httparchive_bak_2020_11_18.txt", 
-            "Line Count": 14, 
-            "File Size": "258.0b", 
-            "Date": 1605694721.6125495, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/automated/httparchive_bak_2020_11_18.txt'>Download</a>"
-        }, 
-        {
             "Filename": "httparchive_directories_1m_2020_11_18.txt", 
             "Line Count": 1000000, 
             "File Size": "30.1mb", 
@@ -69,13 +62,6 @@
             "File Size": "44.0kb", 
             "Date": 1605694701.924236, 
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/automated/httparchive_cgi_pl_2020_11_18.txt'>Download</a>"
-        }, 
-        {
-            "Filename": "httparchive_conf_2020_11_18.txt", 
-            "Line Count": 20, 
-            "File Size": "294.0b", 
-            "Date": 1605694717.0804777, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/automated/httparchive_conf_2020_11_18.txt'>Download</a>"
         }, 
         {
             "Filename": "httparchive_subdomains_2020_11_18.txt", 

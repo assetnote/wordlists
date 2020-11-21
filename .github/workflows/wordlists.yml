@@ -1,8 +1,8 @@
 name: generate and commit wordlists
-# on: workflow_dispatch
-on:
-  schedule:
-    - cron:  "00 12 28 * *"  # At 12:00 on day-of-month 28.
+on: workflow_dispatch
+# on:
+#   schedule:
+#     - cron:  "00 12 28 * *"  # At 12:00 on day-of-month 28.
   
 
 jobs:
@@ -43,187 +43,194 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: "us-east-1"
       
-      - name: generate ./data/automated/httparchive_apiroutes_${{ env.NOW }}.txt
+      - name: generate ./data/automated/httparchive_parameters_top_1m_${{ env.NOW }}.txt
         run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} apiroutes --output "./data/automated/httparchive_apiroutes_${{ env.NOW }}.txt" --limit 1000000 --sources httparchive
+          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} parameters --output "./data/automated/httparchive_parameters_top_1m_${{ env.NOW }}.txt" --limit 1000000 --sources httparchive --date 2020_10_01
             
       - name: sanity check
-        run: head -n25 "./data/automated/httparchive_apiroutes_${{ env.NOW }}.txt"
+        run: head -n25 "./data/automated/httparchive_parameters_top_1m_${{ env.NOW }}.txt"
+
+      # - name: generate ./data/automated/httparchive_apiroutes_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} apiroutes --output "./data/automated/httparchive_apiroutes_${{ env.NOW }}.txt" --limit 1000000 --sources httparchive
+            
+      # - name: sanity check
+      #   run: head -n25 "./data/automated/httparchive_apiroutes_${{ env.NOW }}.txt"
       
-      - name: generate ./data/automated/httparchive_php_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_php_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e php
+      # - name: generate ./data/automated/httparchive_php_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_php_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e php
 
-      - name: sanity check
-        run: head -n25 "./data/automated/httparchive_php_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/automated/httparchive_php_${{ env.NOW }}.txt"
       
-      - name: generate ./data/automated/httparchive_jsp_jspa_do_action_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_jsp_jspa_do_action_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e jsp,jspa,do,action
+      # - name: generate ./data/automated/httparchive_jsp_jspa_do_action_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_jsp_jspa_do_action_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e jsp,jspa,do,action
 
-      - name: sanity check
-        run: head -n25 "./data/automated/httparchive_jsp_jspa_do_action_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/automated/httparchive_jsp_jspa_do_action_${{ env.NOW }}.txt"
       
-      - name: generate ./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e aspx,asp,cfm,svc,ashx,asmx
+      # - name: generate ./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e aspx,asp,cfm,svc,ashx,asmx
             
-      - name: sanity check
-        run: head -n25 "./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_${{ env.NOW }}.txt"
 
-      - name: generate ./data/automated/httparchive_html_htm_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_html_htm_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e html,htm
+      # - name: generate ./data/automated/httparchive_html_htm_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_html_htm_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e html,htm
             
-      - name: sanity check
-        run: head -n25 "./data/automated/httparchive_html_htm_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/automated/httparchive_html_htm_${{ env.NOW }}.txt"
       
-      - name: generate ./data/automated/httparchive_js_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_js_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e js
+      # - name: generate ./data/automated/httparchive_js_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_js_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e js
             
-      - name: sanity check
-        run: head -n25 "./data/automated/httparchive_js_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/automated/httparchive_js_${{ env.NOW }}.txt"
       
-      - name: generate ./data/automated/httparchive_cgi_pl_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_cgi_pl_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e cgi,pl
+      # - name: generate ./data/automated/httparchive_cgi_pl_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_cgi_pl_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e cgi,pl
             
-      - name: sanity check
-        run: head -n25 "./data/automated/httparchive_cgi_pl_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/automated/httparchive_cgi_pl_${{ env.NOW }}.txt"
       
-      - name: generate ./data/automated/httparchive_xml_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_xml_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e xml
+      # - name: generate ./data/automated/httparchive_xml_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_xml_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e xml
             
-      - name: sanity check
-        run: head -n25 "./data/automated/httparchive_xml_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/automated/httparchive_xml_${{ env.NOW }}.txt"
       
-      - name: generate ./data/automated/httparchive_txt_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_txt_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e txt
+      # - name: generate ./data/automated/httparchive_txt_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} ext-wordlist --output "./data/automated/httparchive_txt_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive -e txt
             
-      - name: sanity check
-        run: head -n25 "./data/automated/httparchive_txt_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/automated/httparchive_txt_${{ env.NOW }}.txt"
       
-      - name: generate ./data/automated/httparchive_directories_1m_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} directories --output "./data/automated/httparchive_directories_1m_${{ env.NOW }}.txt" --limit 1000000 --sources httparchive
+      # - name: generate ./data/automated/httparchive_directories_1m_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} directories --output "./data/automated/httparchive_directories_1m_${{ env.NOW }}.txt" --limit 1000000 --sources httparchive
             
-      - name: sanity check
-        run: head -n25 "./data/automated/httparchive_directories_1m_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/automated/httparchive_directories_1m_${{ env.NOW }}.txt"
 
-      - name: generate ./data/automated/httparchive_subdomains_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} subdomains --output "./data/automated/httparchive_subdomains_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive
+      # - name: generate ./data/automated/httparchive_subdomains_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} subdomains --output "./data/automated/httparchive_subdomains_${{ env.NOW }}.txt" --limit 10000000 --sources httparchive
             
-      - name: sanity check
-        run: head -n25 "./data/automated/httparchive_subdomains_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/automated/httparchive_subdomains_${{ env.NOW }}.txt"
       
-      - name: generate ./data/technologies/httparchive_adobe_experience_manager_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_adobe_experience_manager_${{ env.NOW }}.txt" --limit 10000000 --technology "Adobe Experience Manager"
+      # - name: generate ./data/technologies/httparchive_adobe_experience_manager_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_adobe_experience_manager_${{ env.NOW }}.txt" --limit 10000000 --technology "Adobe Experience Manager"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_adobe_experience_manager_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_adobe_experience_manager_${{ env.NOW }}.txt"
 
-      - name: generate ./data/technologies/httparchive_spring_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_spring_${{ env.NOW }}.txt" --limit 10000000 --technology "Spring"
+      # - name: generate ./data/technologies/httparchive_spring_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_spring_${{ env.NOW }}.txt" --limit 10000000 --technology "Spring"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_spring_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_spring_${{ env.NOW }}.txt"
       
-      - name: generate ./data/technologies/httparchive_symfony_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_symfony_${{ env.NOW }}.txt" --limit 10000000 --technology "Symfony"
+      # - name: generate ./data/technologies/httparchive_symfony_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_symfony_${{ env.NOW }}.txt" --limit 10000000 --technology "Symfony"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_symfony_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_symfony_${{ env.NOW }}.txt"
 
-      - name: generate ./data/technologies/httparchive_coldfusion_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_coldfusion_${{ env.NOW }}.txt" --limit 10000000 --technology "Adobe ColdFusion"
+      # - name: generate ./data/technologies/httparchive_coldfusion_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_coldfusion_${{ env.NOW }}.txt" --limit 10000000 --technology "Adobe ColdFusion"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_coldfusion_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_coldfusion_${{ env.NOW }}.txt"
 
-      - name: generate ./data/technologies/httparchive_yii_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_yii_${{ env.NOW }}.txt" --limit 10000000 --technology "Yii"
+      # - name: generate ./data/technologies/httparchive_yii_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_yii_${{ env.NOW }}.txt" --limit 10000000 --technology "Yii"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_yii_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_yii_${{ env.NOW }}.txt"
 
-      - name: generate ./data/technologies/httparchive_laravel_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_laravel_${{ env.NOW }}.txt" --limit 10000000 --technology "Laravel"
+      # - name: generate ./data/technologies/httparchive_laravel_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_laravel_${{ env.NOW }}.txt" --limit 10000000 --technology "Laravel"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_laravel_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_laravel_${{ env.NOW }}.txt"
 
-      - name: generate ./data/technologies/httparchive_rails_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_rails_${{ env.NOW }}.txt" --limit 10000000 --technology "Ruby on Rails"
+      # - name: generate ./data/technologies/httparchive_rails_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_rails_${{ env.NOW }}.txt" --limit 10000000 --technology "Ruby on Rails"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_rails_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_rails_${{ env.NOW }}.txt"
 
-      - name: generate ./data/technologies/httparchive_tomcat_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_tomcat_${{ env.NOW }}.txt" --limit 10000000 --technology "Apache Tomcat"
+      # - name: generate ./data/technologies/httparchive_tomcat_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_tomcat_${{ env.NOW }}.txt" --limit 10000000 --technology "Apache Tomcat"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_tomcat_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_tomcat_${{ env.NOW }}.txt"
       
-      - name: generate ./data/technologies/httparchive_nginx_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_nginx_${{ env.NOW }}.txt" --limit 10000000 --technology "Nginx"
+      # - name: generate ./data/technologies/httparchive_nginx_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_nginx_${{ env.NOW }}.txt" --limit 10000000 --technology "Nginx"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_nginx_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_nginx_${{ env.NOW }}.txt"
 
-      - name: generate ./data/technologies/httparchive_apache_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_apache_${{ env.NOW }}.txt" --limit 10000000 --technology "Apache"
+      # - name: generate ./data/technologies/httparchive_apache_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_apache_${{ env.NOW }}.txt" --limit 10000000 --technology "Apache"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_apache_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_apache_${{ env.NOW }}.txt"
       
-      - name: generate ./data/technologies/httparchive_zend_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_zend_${{ env.NOW }}.txt" --limit 10000000 --technology "Zend"
+      # - name: generate ./data/technologies/httparchive_zend_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_zend_${{ env.NOW }}.txt" --limit 10000000 --technology "Zend"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_zend_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_zend_${{ env.NOW }}.txt"
 
-      - name: generate ./data/technologies/httparchive_cherrypy_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_cherrypy_${{ env.NOW }}.txt" --limit 10000000 --technology "CherryPy"
+      # - name: generate ./data/technologies/httparchive_cherrypy_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_cherrypy_${{ env.NOW }}.txt" --limit 10000000 --technology "CherryPy"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_cherrypy_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_cherrypy_${{ env.NOW }}.txt"
       
-      - name: generate ./data/technologies/httparchive_flask_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_flask_${{ env.NOW }}.txt" --limit 10000000 --technology "Flask"
+      # - name: generate ./data/technologies/httparchive_flask_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_flask_${{ env.NOW }}.txt" --limit 10000000 --technology "Flask"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_flask_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_flask_${{ env.NOW }}.txt"
 
-      - name: generate ./data/technologies/httparchive_django_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_django_${{ env.NOW }}.txt" --limit 10000000 --technology "Django"
+      # - name: generate ./data/technologies/httparchive_django_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_django_${{ env.NOW }}.txt" --limit 10000000 --technology "Django"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_django_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_django_${{ env.NOW }}.txt"
 
-      - name: generate ./data/technologies/httparchive_express_${{ env.NOW }}.txt
-        run: |
-          sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_express_${{ env.NOW }}.txt" --limit 10000000 --technology "Express"
+      # - name: generate ./data/technologies/httparchive_express_${{ env.NOW }}.txt
+      #   run: |
+      #     sudo ./commonspeak2 --credentials credentials.json --project ${{ secrets.GCP_PROJECT_ID }} technologies --output "./data/technologies/httparchive_express_${{ env.NOW }}.txt" --limit 10000000 --technology "Express"
             
-      - name: sanity check
-        run: head -n25 "./data/technologies/httparchive_express_${{ env.NOW }}.txt"
+      # - name: sanity check
+      #   run: head -n25 "./data/technologies/httparchive_express_${{ env.NOW }}.txt"
       
       - name: generate automated json
         run: python gen-json.py ./data/automated/ > ./data/automated.json

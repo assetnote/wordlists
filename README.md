@@ -1,5 +1,7 @@
-Assetnote Wordlists
+[Assetnote Wordlists](https://wordlists.assetnote.io)
 --------------------
+
+> See and download all the wordlists at https://wordlists.assetnote.io/
 
 When performing security testing against an asset, it is vital to have high quality wordlists for content and subdomain discovery. This website provides you with wordlists that are up to date and effective against the most popular technologies on the internet.
 

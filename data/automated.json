@@ -71,25 +71,18 @@
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/automated/httparchive_js_2020_11_18.txt'>Download</a>"
         }, 
         {
-            "Filename": "httparchive_bak_2020_11_18.txt", 
-            "Line Count": 14, 
-            "File Size": "258.0b", 
-            "Date": 1605694943.0, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/automated/httparchive_bak_2020_11_18.txt'>Download</a>"
-        }, 
-        {
             "Filename": "httparchive_apiroutes_2020_11_20.txt", 
             "Line Count": 953011, 
             "File Size": "45.3mb", 
-            "Date": 1605916709.7715192, 
+            "Date": 1605916713.0, 
             "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/automated/httparchive_apiroutes_2020_11_20.txt'>Download</a>"
         }, 
         {
-            "Filename": "httparchive_conf_2020_11_18.txt", 
-            "Line Count": 20, 
-            "File Size": "294.0b", 
-            "Date": 1605694943.0, 
-            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/automated/httparchive_conf_2020_11_18.txt'>Download</a>"
+            "Filename": "httparchive_parameters_top_1m_2020_11_21.txt", 
+            "Line Count": 815079, 
+            "File Size": "12.9mb", 
+            "Date": 1605994363.4835567, 
+            "Download": "<a href='https://s3.amazonaws.com/assetnote-wordlists/./data/automated/httparchive_parameters_top_1m_2020_11_21.txt'>Download</a>"
         }
     ]
 }

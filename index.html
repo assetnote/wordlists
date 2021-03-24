@@ -84,7 +84,7 @@
 <a class="github-button" href="https://github.com/assetnote/wordlists" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star assetnote/wordlists on GitHub">Star</a> <a href="https://twitter.com/assetnote?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="false">Follow @assetnote</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <p>You can download all of the wordlists at once, using the following command: </p>
-<code>aws s3 sync s3://assetnote-wordlists/data/ ./assetnote-wordlists --no-sign-request</code>
+<code>wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/ -nH</code>
 
 <h1>Automatically Generated Wordlists</h1>
 

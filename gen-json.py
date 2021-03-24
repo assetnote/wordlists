@@ -25,7 +25,7 @@ for item in filelist:
 	num_lines = sum(1 for line in open(full_path))
 	file_size = sizeof_fmt(os.path.getsize(full_path))
 	modification_time = modification_date(full_path)
-	obj = OrderedDict([("Filename", item), ("Line Count", num_lines), ("File Size", file_size), ("Date", modification_time), ("Download", "<a href='https://s3.amazonaws.com/assetnote-wordlists/{0}{1}'>Download</a>".format(directory, item))])
+	obj = OrderedDict([("Filename", item), ("Line Count", num_lines), ("File Size", file_size), ("Date", modification_time), ("Download", "<a href='https://wordlists-cdn.assetnote.io/{0}{1}'>Download</a>".format(directory, item))])
 	files_json["data"].append(obj)
 
 print(json.dumps(files_json,indent=4,ensure_ascii=False))

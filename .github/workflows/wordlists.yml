@@ -26,9 +26,7 @@ jobs:
         run: mkdir -p data/technologies/
 
       - name: wget
-        uses: wei/wget@v1
-        with:
-          args: -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/ -nH
+        run: wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/ -nH
 
       # - name: S3 Sync automated to local
       #   uses: ItsKarma/aws-cli@v1.70.0

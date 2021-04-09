@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "Filename": "swagger-files.tar",
+            "Line Count": 55959381,
+            "File Size": "4.4gb",
+            "Date": 1617749845.813965,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/rawdata/kiterunner/swagger-files.tar'>Download</a>"
+        },
+        {
+            "Filename": "routes-large.json.tar.gz",
+            "Line Count": 478857,
+            "File Size": "118.8mb",
+            "Date": 1617772232.938851,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/rawdata/kiterunner/routes-large.json.tar.gz'>Download</a>"
+        },
+        {
+            "Filename": "routes-small.json.tar.gz",
+            "Line Count": 58288,
+            "File Size": "14.6mb",
+            "Date": 1617772200.6286616,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/rawdata/kiterunner/routes-small.json.tar.gz'>Download</a>"
+        },
+        {
+            "Filename": "swagger-wordlist.txt",
+            "Line Count": 958872,
+            "File Size": "27.2mb",
+            "Date": 1617755202.913446,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/data/kiterunner/swagger-wordlist.txt'>Download</a>"
+        },
+        {
+            "Filename": "routes-small.kite.tar.gz",
+            "Line Count": 1537,
+            "File Size": "429.9kb",
+            "Date": 1617770640.3956752,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/data/kiterunner/routes-small.kite.tar.gz'>Download</a>"
+        },
+        {
+            "Filename": "routes-large.kite.tar.gz",
+            "Line Count": 139983,
+            "File Size": "34.7mb",
+            "Date": 1617770612.8990765,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/data/kiterunner/routes-large.kite.tar.gz'>Download</a>"
+        }
+    ]
+}

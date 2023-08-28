@@ -1,88 +1,88 @@
 {
     "data": [
         {
-            "Filename": "httparchive_directories_1m_2023_07_28.txt",
-            "Line Count": 705878,
-            "File Size": "19.2mb",
-            "Date": 1690549410.0484316,
-            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_directories_1m_2023_07_28.txt'>Download</a>"
+            "Filename": "httparchive_js_2023_08_28.txt",
+            "Line Count": 2519356,
+            "File Size": "48.1mb",
+            "Date": 1693226918.4059799,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_js_2023_08_28.txt'>Download</a>"
         },
         {
-            "Filename": "httparchive_subdomains_2023_07_28.txt",
-            "Line Count": 2351903,
-            "File Size": "32.0mb",
-            "Date": 1690550173.1543102,
-            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_subdomains_2023_07_28.txt'>Download</a>"
+            "Filename": "httparchive_parameters_top_1m_2023_08_28.txt",
+            "Line Count": 303561,
+            "File Size": "3.3mb",
+            "Date": 1693224673.921431,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_parameters_top_1m_2023_08_28.txt'>Download</a>"
         },
         {
-            "Filename": "httparchive_aspx_asp_cfm_svc_ashx_asmx_2023_07_28.txt",
-            "Line Count": 48102,
-            "File Size": "951.8kb",
-            "Date": 1690546655.8112082,
-            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_2023_07_28.txt'>Download</a>"
-        },
-        {
-            "Filename": "httparchive_jsp_jspa_do_action_2023_07_28.txt",
-            "Line Count": 13211,
-            "File Size": "218.8kb",
-            "Date": 1690546617.6089685,
-            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_jsp_jspa_do_action_2023_07_28.txt'>Download</a>"
-        },
-        {
-            "Filename": "httparchive_apiroutes_2023_07_28.txt",
-            "Line Count": 279144,
-            "File Size": "8.2mb",
-            "Date": 1690546563.0657277,
-            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_apiroutes_2023_07_28.txt'>Download</a>"
-        },
-        {
-            "Filename": "httparchive_parameters_top_1m_2023_07_28.txt",
-            "Line Count": 302783,
-            "File Size": "3.2mb",
-            "Date": 1690546303.2861598,
-            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_parameters_top_1m_2023_07_28.txt'>Download</a>"
-        },
-        {
-            "Filename": "httparchive_html_htm_2023_07_28.txt",
-            "Line Count": 143120,
-            "File Size": "2.9mb",
-            "Date": 1690546736.3320408,
-            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_html_htm_2023_07_28.txt'>Download</a>"
-        },
-        {
-            "Filename": "httparchive_xml_2023_07_28.txt",
-            "Line Count": 10349,
-            "File Size": "185.0kb",
-            "Date": 1690549120.5630925,
-            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_xml_2023_07_28.txt'>Download</a>"
-        },
-        {
-            "Filename": "httparchive_txt_2023_07_28.txt",
-            "Line Count": 8451,
-            "File Size": "161.9kb",
-            "Date": 1690549137.5361075,
-            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_txt_2023_07_28.txt'>Download</a>"
-        },
-        {
-            "Filename": "httparchive_js_2023_07_28.txt",
-            "Line Count": 2532806,
-            "File Size": "48.2mb",
-            "Date": 1690549081.7927752,
-            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_js_2023_07_28.txt'>Download</a>"
-        },
-        {
-            "Filename": "httparchive_cgi_pl_2023_07_28.txt",
-            "Line Count": 2838,
-            "File Size": "37.3kb",
-            "Date": 1690549091.0933323,
-            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_cgi_pl_2023_07_28.txt'>Download</a>"
-        },
-        {
-            "Filename": "httparchive_php_2023_07_28.txt",
-            "Line Count": 77616,
+            "Filename": "httparchive_php_2023_08_28.txt",
+            "Line Count": 76264,
             "File Size": "1.3mb",
-            "Date": 1690546600.9079697,
-            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_php_2023_07_28.txt'>Download</a>"
+            "Date": 1693224921.253952,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_php_2023_08_28.txt'>Download</a>"
+        },
+        {
+            "Filename": "httparchive_subdomains_2023_08_28.txt",
+            "Line Count": 2283651,
+            "File Size": "31.0mb",
+            "Date": 1693227786.839671,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_subdomains_2023_08_28.txt'>Download</a>"
+        },
+        {
+            "Filename": "httparchive_aspx_asp_cfm_svc_ashx_asmx_2023_08_28.txt",
+            "Line Count": 46820,
+            "File Size": "924.9kb",
+            "Date": 1693224955.893938,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_aspx_asp_cfm_svc_ashx_asmx_2023_08_28.txt'>Download</a>"
+        },
+        {
+            "Filename": "httparchive_apiroutes_2023_08_28.txt",
+            "Line Count": 283383,
+            "File Size": "8.4mb",
+            "Date": 1693224890.6938844,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_apiroutes_2023_08_28.txt'>Download</a>"
+        },
+        {
+            "Filename": "httparchive_cgi_pl_2023_08_28.txt",
+            "Line Count": 2792,
+            "File Size": "36.7kb",
+            "Date": 1693226929.0220027,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_cgi_pl_2023_08_28.txt'>Download</a>"
+        },
+        {
+            "Filename": "httparchive_txt_2023_08_28.txt",
+            "Line Count": 8169,
+            "File Size": "157.1kb",
+            "Date": 1693226958.2859602,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_txt_2023_08_28.txt'>Download</a>"
+        },
+        {
+            "Filename": "httparchive_directories_1m_2023_08_28.txt",
+            "Line Count": 702810,
+            "File Size": "19.1mb",
+            "Date": 1693227188.6145744,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_directories_1m_2023_08_28.txt'>Download</a>"
+        },
+        {
+            "Filename": "httparchive_xml_2023_08_28.txt",
+            "Line Count": 10219,
+            "File Size": "182.4kb",
+            "Date": 1693226941.934,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_xml_2023_08_28.txt'>Download</a>"
+        },
+        {
+            "Filename": "httparchive_html_htm_2023_08_28.txt",
+            "Line Count": 139192,
+            "File Size": "2.8mb",
+            "Date": 1693225023.0462046,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_html_htm_2023_08_28.txt'>Download</a>"
+        },
+        {
+            "Filename": "httparchive_jsp_jspa_do_action_2023_08_28.txt",
+            "Line Count": 13217,
+            "File Size": "218.9kb",
+            "Date": 1693224934.005981,
+            "Download": "<a href='https://wordlists-cdn.assetnote.io/./data/automated/httparchive_jsp_jspa_do_action_2023_08_28.txt'>Download</a>"
         }
     ]
 }

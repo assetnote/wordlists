@@ -1,9 +1,8 @@
 name: generate and commit wordlists
-on: workflow_dispatch
 on:
   schedule:
     - cron:  "00 12 27 * *"  # At 12:00 on day-of-month 27.
-  
+  workflow_dispatch
 
 jobs:
   wordlists:

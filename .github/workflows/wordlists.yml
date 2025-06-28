@@ -24,9 +24,6 @@ jobs:
       
       - name: make technologies dir
         run: mkdir -p data/technologies/
-
-      - name: wget
-        run: wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/ -nH
       
       - name: generate ./data/automated/httparchive_parameters_top_1m_${{ env.NOW }}.txt
         run: |
@@ -224,14 +221,14 @@ jobs:
         run: python gen-json.py ./data/technologies/ > ./data/technologies.json
       
       - name: Copy data folder content recursively to remote
-        uses: garygrossgarten/github-action-scp@release
+        uses: appleboy/scp-action@v0.1.4
         with:
-          local: data
-          remote: /var/www/html/data/
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
-          privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
-          concurrency: 5
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "data/*"
+          target: "/var/www/html/"
+          recursive: true
       
       - name: setup ssh
         env:
